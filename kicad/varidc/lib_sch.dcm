@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP L_Core_Ferrite_Coupled_Alt
+D Coupled inductor with ferrite core
+K inductor choke coil reactor magnetic coupled
+F ~
+$ENDCMP
+#
+$CMP VIPER06_DIP-7
+F https://www.st.com/resource/en/datasheet/viper06.pdf
+$ENDCMP
+#
+#End Doc Library

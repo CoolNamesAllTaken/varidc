@@ -1,0 +1,98 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=C:\Users\c13248\Documents\SMPS Projects\SMPS Design Packages for Installer\720W Platinum Rated AC_DC Reference Design\Source Code\Secondary-dsPIC33FJ16GS504\i2c.o
+Folder=Intermediary
+DeviceName=dsPIC33FJ16GS504
+LanguageToolSuiteID={9BCCB495-CD65-480A-BA76-63D8E78B117F}
+LanguageToolID={B1442D91-FF1F-4E60-9714-C39C1BA9DB62}
+LanguageToolLocation=C:\Program Files\Microchip\xc16\v1.11\bin\xc16-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)|.\inc||$(INCDIR)|.\h||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|src\i2c.c|src\init.c|src\main.c|src\serial.c|src\control_dcdc.s||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g -Wall
+TraceCmdString=
+DebugOptions=
+[File001]
+Location=C:\Users\c13248\Documents\SMPS Projects\SMPS Design Packages for Installer\720W Platinum Rated AC_DC Reference Design\Source Code\Secondary-dsPIC33FJ16GS504\init.o
+Folder=Intermediary
+DeviceName=dsPIC33FJ16GS504
+LanguageToolSuiteID={9BCCB495-CD65-480A-BA76-63D8E78B117F}
+LanguageToolID={B1442D91-FF1F-4E60-9714-C39C1BA9DB62}
+LanguageToolLocation=C:\Program Files\Microchip\xc16\v1.11\bin\xc16-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)|.\inc||$(INCDIR)|.\h||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|src\i2c.c|src\init.c|src\main.c|src\serial.c|src\control_dcdc.s||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g -Wall
+TraceCmdString=
+DebugOptions=
+[File002]
+Location=C:\Users\c13248\Documents\SMPS Projects\SMPS Design Packages for Installer\720W Platinum Rated AC_DC Reference Design\Source Code\Secondary-dsPIC33FJ16GS504\main.o
+Folder=Intermediary
+DeviceName=dsPIC33FJ16GS504
+LanguageToolSuiteID={9BCCB495-CD65-480A-BA76-63D8E78B117F}
+LanguageToolID={B1442D91-FF1F-4E60-9714-C39C1BA9DB62}
+LanguageToolLocation=C:\Program Files\Microchip\xc16\v1.11\bin\xc16-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)|.\inc||$(INCDIR)|.\h||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|src\i2c.c|src\init.c|src\main.c|src\serial.c|src\control_dcdc.s||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g -Wall
+TraceCmdString=
+DebugOptions=
+[File003]
+Location=C:\Users\c13248\Documents\SMPS Projects\SMPS Design Packages for Installer\720W Platinum Rated AC_DC Reference Design\Source Code\Secondary-dsPIC33FJ16GS504\serial.o
+Folder=Intermediary
+DeviceName=dsPIC33FJ16GS504
+LanguageToolSuiteID={9BCCB495-CD65-480A-BA76-63D8E78B117F}
+LanguageToolID={B1442D91-FF1F-4E60-9714-C39C1BA9DB62}
+LanguageToolLocation=C:\Program Files\Microchip\xc16\v1.11\bin\xc16-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)|.\inc||$(INCDIR)|.\h||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|src\i2c.c|src\init.c|src\main.c|src\serial.c|src\control_dcdc.s||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g -Wall
+TraceCmdString=
+DebugOptions=
+[File004]
+Location=C:\Users\c13248\Documents\SMPS Projects\SMPS Design Packages for Installer\720W Platinum Rated AC_DC Reference Design\Source Code\Secondary-dsPIC33FJ16GS504\control_dcdc.o
+Folder=Intermediary
+DeviceName=dsPIC33FJ16GS504
+LanguageToolSuiteID={9BCCB495-CD65-480A-BA76-63D8E78B117F}
+LanguageToolID={C6E07232-414F-4A0C-AF99-CD44E2B71960}
+LanguageToolLocation=C:\Program Files\Microchip\xc16\v1.11\bin\xc16-as.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)|.\inc||$(INCDIR)|.\h||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|src\i2c.c|src\init.c|src\main.c|src\serial.c|src\control_dcdc.s||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+DebugOptions=
+[File005]
+Location=C:\Users\c13248\Documents\SMPS Projects\SMPS Design Packages for Installer\720W Platinum Rated AC_DC Reference Design\Source Code\Secondary-dsPIC33FJ16GS504\Interleaved Two Switch Forward Converter.cof
+Folder=Output
+DeviceName=dsPIC33FJ16GS504
+LanguageToolSuiteID={9BCCB495-CD65-480A-BA76-63D8E78B117F}
+LanguageToolID={6836D8CA-42BB-48FB-9E77-3F0AA8005073}
+LanguageToolLocation=C:\Program Files\Microchip\xc16\v1.11\bin\xc16-ld.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)|.\inc||$(INCDIR)|.\h||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|src\i2c.c|src\init.c|src\main.c|src\serial.c|src\control_dcdc.s||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)" -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem
+TraceCmdString=
+DebugOptions=
+[File006]
+Location=C:\Users\c13248\Documents\SMPS Projects\SMPS Design Packages for Installer\720W Platinum Rated AC_DC Reference Design\Source Code\Secondary-dsPIC33FJ16GS504\Interleaved Two Switch Forward Converter.hex
+Folder=Output
+DeviceName=dsPIC33FJ16GS504
+LanguageToolSuiteID={9BCCB495-CD65-480A-BA76-63D8E78B117F}
+LanguageToolID={6836D8CA-42BB-48FB-9E77-3F0AA8005073}
+LanguageToolLocation=C:\Program Files\Microchip\xc16\v1.11\bin\xc16-ld.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)|.\inc||$(INCDIR)|.\h||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|src\i2c.c|src\init.c|src\main.c|src\serial.c|src\control_dcdc.s||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=-o"$(BINDIR_)$(TARGETBASE).$(TARGETSUFFIX)" -Map="$(BINDIR_)$(TARGETBASE).map" --report-mem
+TraceCmdString=
+DebugOptions=
+[TOOL_LOC_STAMPS]
+tool_loc{C6E07232-414F-4A0C-AF99-CD44E2B71960}=C:\Program Files\Microchip\xc16\v1.11\bin\xc16-as.exe
+tool_loc{B1442D91-FF1F-4E60-9714-C39C1BA9DB62}=C:\Program Files\Microchip\xc16\v1.11\bin\xc16-gcc.exe
+tool_loc{6836D8CA-42BB-48FB-9E77-3F0AA8005073}=C:\Program Files\Microchip\xc16\v1.11\bin\xc16-ld.exe

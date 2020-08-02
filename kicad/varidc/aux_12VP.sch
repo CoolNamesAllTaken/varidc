@@ -1,0 +1,372 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L lib_sch:VIPER06_DIP-7 U?
+U 1 1 5F199A1E
+P 5750 3450
+F 0 "U?" H 5400 3750 50  0000 L CNN
+F 1 "VIPER06" H 5450 3250 50  0000 L CNN
+F 2 "Package_DIP:DIP-8-N6_W7.62mm" H 5800 3900 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/viper06.pdf" H 5800 3900 50  0001 C CNN
+	1    5750 3450
+	1    0    0    -1  
+$EndComp
+Text HLabel 2000 2800 0    50   Input ~ 0
+AC_LINE
+Text HLabel 2000 3300 0    50   Input ~ 0
+AC_NEUT
+$Comp
+L Device:D D?
+U 1 1 5F1B1C92
+P 2300 2800
+F 0 "D?" H 2300 2584 50  0000 C CNN
+F 1 "D" H 2300 2675 50  0000 C CNN
+F 2 "" H 2300 2800 50  0001 C CNN
+F 3 "~" H 2300 2800 50  0001 C CNN
+	1    2300 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F1B2378
+P 2700 2800
+F 0 "R?" V 2495 2800 50  0000 C CNN
+F 1 "R_US" V 2586 2800 50  0000 C CNN
+F 2 "" V 2740 2790 50  0001 C CNN
+F 3 "~" H 2700 2800 50  0001 C CNN
+	1    2700 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5F1B27D6
+P 2950 3050
+F 0 "C?" H 3065 3096 50  0000 L CNN
+F 1 "CP1" H 3065 3005 50  0000 L CNN
+F 2 "" H 2950 3050 50  0001 C CNN
+F 3 "~" H 2950 3050 50  0001 C CNN
+	1    2950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5F1B2F15
+P 3200 2800
+F 0 "L?" V 3390 2800 50  0000 C CNN
+F 1 "L" V 3299 2800 50  0000 C CNN
+F 2 "" H 3200 2800 50  0001 C CNN
+F 3 "~" H 3200 2800 50  0001 C CNN
+	1    3200 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2000 2800 2150 2800
+Wire Wire Line
+	2450 2800 2550 2800
+Wire Wire Line
+	2850 2800 2950 2800
+Wire Wire Line
+	2950 2900 2950 2800
+Connection ~ 2950 2800
+Wire Wire Line
+	2950 2800 3050 2800
+Wire Wire Line
+	2950 3200 2950 3300
+Wire Wire Line
+	2950 3300 2000 3300
+$Comp
+L Device:CP1 C?
+U 1 1 5F1B3DC0
+P 3450 3050
+F 0 "C?" H 3565 3096 50  0000 L CNN
+F 1 "CP1" H 3565 3005 50  0000 L CNN
+F 2 "" H 3450 3050 50  0001 C CNN
+F 3 "~" H 3450 3050 50  0001 C CNN
+	1    3450 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2800 3450 2800
+Wire Wire Line
+	3450 2800 3450 2900
+Wire Wire Line
+	3450 3200 3450 3300
+Wire Wire Line
+	3450 3300 2950 3300
+Connection ~ 2950 3300
+Wire Wire Line
+	3450 2800 6050 2800
+Wire Wire Line
+	6050 2800 6050 3050
+Connection ~ 3450 2800
+$Comp
+L Device:D D?
+U 1 1 5F1B5CF4
+P 6050 4700
+F 0 "D?" V 6004 4779 50  0000 L CNN
+F 1 "D" V 6095 4779 50  0000 L CNN
+F 2 "" H 6050 4700 50  0001 C CNN
+F 3 "~" H 6050 4700 50  0001 C CNN
+	1    6050 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 4550 6050 4450
+$Comp
+L Device:C C?
+U 1 1 5F1E9F92
+P 3850 3700
+F 0 "C?" H 3965 3746 50  0000 L CNN
+F 1 "C" H 3965 3655 50  0000 L CNN
+F 2 "" H 3888 3550 50  0001 C CNN
+F 3 "~" H 3850 3700 50  0001 C CNN
+	1    3850 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3550 3850 2950
+Wire Wire Line
+	3850 2950 5750 2950
+Wire Wire Line
+	5750 2950 5750 3050
+Wire Wire Line
+	3850 3850 3850 4450
+Connection ~ 6050 4450
+Wire Wire Line
+	6050 4450 6050 3850
+$Comp
+L Device:R_US R?
+U 1 1 5F1EDCE2
+P 5750 4150
+F 0 "R?" H 5818 4196 50  0000 L CNN
+F 1 "R_US" H 5818 4105 50  0000 L CNN
+F 2 "" V 5790 4140 50  0001 C CNN
+F 3 "~" H 5750 4150 50  0001 C CNN
+	1    5750 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4000 5750 3850
+Wire Wire Line
+	5750 4300 5750 4450
+Connection ~ 5750 4450
+Wire Wire Line
+	5750 4450 6050 4450
+$Comp
+L Device:R_US R?
+U 1 1 5F1EED50
+P 4850 3850
+F 0 "R?" H 4918 3896 50  0000 L CNN
+F 1 "R_US" H 4918 3805 50  0000 L CNN
+F 2 "" V 4890 3840 50  0001 C CNN
+F 3 "~" H 4850 3850 50  0001 C CNN
+	1    4850 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4450 5750 4450
+Connection ~ 4850 4450
+Wire Wire Line
+	3850 4450 4250 4450
+$Comp
+L Device:C C?
+U 1 1 5F1EF28B
+P 4850 4250
+F 0 "C?" H 4965 4296 50  0000 L CNN
+F 1 "C" H 4965 4205 50  0000 L CNN
+F 2 "" H 4888 4100 50  0001 C CNN
+F 3 "~" H 4850 4250 50  0001 C CNN
+	1    4850 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4400 4850 4450
+Wire Wire Line
+	4850 4000 4850 4100
+Wire Wire Line
+	4850 3700 4850 3650
+Wire Wire Line
+	4850 3650 5250 3650
+Text Notes 4650 4400 1    50   ~ 0
+Compensator Network
+$Comp
+L Device:C C?
+U 1 1 5F1F18CB
+P 4250 3950
+F 0 "C?" H 4365 3996 50  0000 L CNN
+F 1 "C" H 4365 3905 50  0000 L CNN
+F 2 "" H 4288 3800 50  0001 C CNN
+F 3 "~" H 4250 3950 50  0001 C CNN
+	1    4250 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3450 4250 3450
+Wire Wire Line
+	4250 3450 4250 3800
+Wire Wire Line
+	4250 4100 4250 4450
+Connection ~ 4250 4450
+Wire Wire Line
+	4250 4450 4850 4450
+Text Notes 5600 4400 1    50   ~ 0
+Current Limit\nResistor
+Text Notes 6000 4800 1    50   ~ 0
+Dout
+$Comp
+L Device:L L?
+U 1 1 5F1F973C
+P 6900 4450
+F 0 "L?" V 7090 4450 50  0000 C CNN
+F 1 "L" V 6999 4450 50  0000 C CNN
+F 2 "" H 6900 4450 50  0001 C CNN
+F 3 "~" H 6900 4450 50  0001 C CNN
+	1    6900 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6750 4450 6550 4450
+Text Notes 6800 4550 0    50   ~ 0
+Lout
+$Comp
+L Device:CP1 C?
+U 1 1 5F1FA991
+P 7300 4700
+F 0 "C?" H 7415 4746 50  0000 L CNN
+F 1 "CP1" H 7415 4655 50  0000 L CNN
+F 2 "" H 7300 4700 50  0001 C CNN
+F 3 "~" H 7300 4700 50  0001 C CNN
+	1    7300 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4550 7300 4450
+Wire Wire Line
+	7300 4450 7050 4450
+Text Notes 7200 4800 1    50   ~ 0
+Cout
+Wire Wire Line
+	7300 4850 7300 4950
+Wire Wire Line
+	7300 4950 6050 4950
+Wire Wire Line
+	6050 4950 6050 4850
+Wire Wire Line
+	2950 3300 2950 4950
+Wire Wire Line
+	2950 4950 6050 4950
+Connection ~ 6050 4950
+$Comp
+L Device:R_US R?
+U 1 1 5F1FE726
+P 6550 2950
+F 0 "R?" H 6618 2996 50  0000 L CNN
+F 1 "R_US" H 6618 2905 50  0000 L CNN
+F 2 "" V 6590 2940 50  0001 C CNN
+F 3 "~" H 6550 2950 50  0001 C CNN
+	1    6550 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3100 6550 3200
+Connection ~ 6550 4450
+Wire Wire Line
+	6550 4450 6050 4450
+$Comp
+L Device:D D?
+U 1 1 5F202A5D
+P 7300 3900
+F 0 "D?" V 7254 3979 50  0000 L CNN
+F 1 "D" V 7345 3979 50  0000 L CNN
+F 2 "" H 7300 3900 50  0001 C CNN
+F 3 "~" H 7300 3900 50  0001 C CNN
+	1    7300 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 4050 7300 4450
+Connection ~ 7300 4450
+$Comp
+L Device:C C?
+U 1 1 5F204A74
+P 7000 2650
+F 0 "C?" H 7115 2696 50  0000 L CNN
+F 1 "C" H 7115 2605 50  0000 L CNN
+F 2 "" H 7038 2500 50  0001 C CNN
+F 3 "~" H 7000 2650 50  0001 C CNN
+	1    7000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F206A7C
+P 6550 2400
+F 0 "R?" H 6618 2446 50  0000 L CNN
+F 1 "R_US" H 6618 2355 50  0000 L CNN
+F 2 "" V 6590 2390 50  0001 C CNN
+F 3 "~" H 6550 2400 50  0001 C CNN
+	1    6550 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2550 6550 2650
+Wire Wire Line
+	6550 2250 6550 2150
+Wire Wire Line
+	6550 2150 7000 2150
+Wire Wire Line
+	7000 2150 7000 2500
+Wire Wire Line
+	7000 2800 7000 3200
+Wire Wire Line
+	7000 3200 6550 3200
+Connection ~ 6550 3200
+Wire Wire Line
+	6550 3200 6550 4450
+Wire Wire Line
+	7000 2150 7300 2150
+Wire Wire Line
+	7300 2150 7300 3750
+Connection ~ 7000 2150
+Wire Wire Line
+	6550 2650 4250 2650
+Wire Wire Line
+	4250 2650 4250 3450
+Connection ~ 6550 2650
+Wire Wire Line
+	6550 2650 6550 2800
+Connection ~ 4250 3450
+Text Notes 6500 3050 1    50   ~ 0
+Rfb2
+Text Notes 6500 2500 1    50   ~ 0
+Rfb1
+Text Notes 7500 2550 0    50   ~ 0
+When switch is OFF, left side of Lout is AC_NEUT.\nOutput voltage (Vout - AC_NEUT) measured via\nRfb1, Rfb2 voltage divider.
+Text GLabel 7550 4450 2    50   Input ~ 0
+12VP
+Wire Wire Line
+	7550 4450 7300 4450
+Text Notes 4150 4000 1    50   ~ 0
+Cfb
+Text Notes 4800 3950 1    50   ~ 0
+Rcomp
+Text Notes 4750 4350 1    50   ~ 0
+Ccomp
+Text Notes 5700 4250 1    50   ~ 0
+RLIM
+Text Notes 3950 2300 0    100  ~ 0
+Unisolated Buck Converter
+$EndSCHEMATC

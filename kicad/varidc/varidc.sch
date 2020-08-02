@@ -1,0 +1,135 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4050 2850 1550 800 
+U 5F040F77
+F0 "Power Factor Correction Stage" 50
+F1 "PFC.sch" 50
+F3 "AC_LINE" I L 4050 2950 50 
+F4 "AC_NEUT" I L 4050 3100 50 
+F5 "VDC_BULK" I R 5600 2950 50 
+$EndSheet
+$Sheet
+S 4050 3900 1550 450 
+U 5F19149B
+F0 "Unisolated 12V Supply" 50
+F1 "aux_12VP.sch" 50
+F2 "AC_LINE" I L 4050 4000 50 
+F3 "AC_NEUT" I L 4050 4150 50 
+$EndSheet
+$Sheet
+S 6050 2850 1400 600 
+U 5F191A65
+F0 "DC DC Converter Stage" 50
+F1 "DCDC.sch" 50
+$EndSheet
+$Sheet
+S 6050 3800 1400 1200
+U 5F191B27
+F0 "Isolated 12V Supply" 50
+F1 "aux_12VS.sch" 50
+$EndSheet
+$Comp
+L power:Earth #PWR?
+U 1 1 5F1AA547
+P 2100 3500
+AR Path="/5F040F77/5F1AA547" Ref="#PWR?"  Part="1" 
+AR Path="/5F1AA547" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2100 3250 50  0001 C CNN
+F 1 "Earth" H 2100 3350 50  0001 C CNN
+F 2 "" H 2100 3500 50  0001 C CNN
+F 3 "~" H 2100 3500 50  0001 C CNN
+	1    2100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5F1AA54D
+P 2450 3500
+AR Path="/5F040F77/5F1AA54D" Ref="#PWR?"  Part="1" 
+AR Path="/5F1AA54D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2450 3300 50  0001 C CNN
+F 1 "GNDPWR" H 2454 3346 50  0000 C CNN
+F 2 "" H 2450 3450 50  0001 C CNN
+F 3 "" H 2450 3450 50  0001 C CNN
+	1    2450 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3500 2450 3450
+Wire Wire Line
+	2450 3450 2100 3450
+Wire Wire Line
+	2100 3450 2100 3500
+Wire Wire Line
+	3750 2950 3750 4000
+Wire Wire Line
+	3750 4000 4050 4000
+Wire Wire Line
+	3750 2950 4050 2950
+Wire Wire Line
+	3600 3100 3600 4150
+Wire Wire Line
+	3600 4150 4050 4150
+Wire Wire Line
+	3600 3100 4050 3100
+$Sheet
+S 2250 2850 1050 350 
+U 5F1CC5F8
+F0 "Input Filter" 50
+F1 "input_filter.sch" 50
+F2 "AC_LINE" I L 2250 2950 50 
+F3 "AC_NEUT" I L 2250 3100 50 
+F4 "AC_LINE_FILT" I R 3300 2950 50 
+F5 "AC_NEUT_FILT" I R 3300 3100 50 
+$EndSheet
+Wire Wire Line
+	3300 2950 3750 2950
+Connection ~ 3750 2950
+Wire Wire Line
+	3300 3100 3600 3100
+Connection ~ 3600 3100
+Wire Wire Line
+	2150 3100 2250 3100
+$Comp
+L power:NEUT #PWR?
+U 1 1 5F1AA540
+P 2150 3100
+AR Path="/5F040F77/5F1AA540" Ref="#PWR?"  Part="1" 
+AR Path="/5F1AA540" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2150 2950 50  0001 C CNN
+F 1 "NEUT" V 2168 3228 50  0000 L CNN
+F 2 "" H 2150 3100 50  0001 C CNN
+F 3 "" H 2150 3100 50  0001 C CNN
+	1    2150 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2150 2950 2250 2950
+$Comp
+L power:LINE #PWR?
+U 1 1 5F1AA539
+P 2150 2950
+AR Path="/5F040F77/5F1AA539" Ref="#PWR?"  Part="1" 
+AR Path="/5F1AA539" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2150 2800 50  0001 C CNN
+F 1 "LINE" V 2168 3078 50  0000 L CNN
+F 2 "" H 2150 2950 50  0001 C CNN
+F 3 "" H 2150 2950 50  0001 C CNN
+	1    2150 2950
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

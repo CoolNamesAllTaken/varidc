@@ -1,0 +1,84 @@
+/***************************************************************************
+Company:	APtronic AG
+An der Helle 26
+59505 Bad Sassendorf
+
+****************************************************************************
+Project:	prim-dsPIC33FJ16GS502_project_Rev01_0 
+File:		main.h
+Description:	Basical PFC-Controller with Protectionfunctions and 
+				Communicationfunction with sec dsPIC.
+				Features for Efficiency improvments will following.
+Author:		 Thorsten Schulte
+		
+****************************************************************************
+Revision History
+
+Date:			Revision:		Description:	
+		
+21.02.2011		1.0			- first constrution of this file for basical 
+							Program Defines
+
+***************************************************************************/
+//main.h
+
+#ifndef _MAIN_H_
+#define _MAIN_H_
+
+
+/***************************************************************************
+Defines
+***************************************************************************/
+
+#define PFC_PER 2448	// use 96 kHz for PWM (100kHz = 2350)
+
+//Current Controller
+#define CURR_KP 22000
+#define CURR_KI 6000
+
+//Voltage Controller
+#define VOLT_KP 32000 //18000
+#define VOLT_KI 100
+
+//Protection Limmits
+#define CURR1_LIMIT 1023	//Current 1 Limit at 11A 
+#define CURR2_LIMIT 1023	//Current 2 Limit at 11A
+#define BULKVOLT_LIMIT 864	//Bulkvoltage Limit at 430V
+
+//Switching Limits
+#define SWON_LO 180 	// switch on limit is 90V
+#define SWON_HI 553 	// switch on limit is 264V
+//#define SWOFF_LO 170 	// switch off limit is 85V
+// new SWOFF_LO limit due to derating...
+#define SWOFF_LO 100 	// switch off limit is 50V
+#define SWOFF_HI 562 	// switch off limit is 270V
+#define SWOFF_TEMP 620  // switch off limit at Over Temperature (130 °C= int 558)
+#define SWON_TEMP 496
+
+//Softstart Settings
+#define SS_DELAY 480	// delay is 100 ms
+#define SS_RAMP 1440	// ramp is 200 ms => 4.8 = 1ms
+
+//Jitter Settings
+#define JITTERSRC 1 //Jitter-Source (0=No Jitter; 1=internally generated; 2=Use PLL)
+#define FSWING_MIN 14745 /* decrease PTPER by 10% => frequency is increased by 10.0%, 100% = 16384 fractional */
+#define FSWING_MAX 18021 /* increase PTPER by 10% => frequency is decreased by 10.0%, 100% = 16384 fractional */
+#define FSWING_FREQ 170   /* one period of fswing is direct in Hz*/
+#define FSWING_INT_FREQ 4800 /* Interrupt Frequenz */
+#define FSWING_STEPS FSWING_INT_FREQ/(FSWING_FREQ*4) /* STEPS for one edge */
+#define FSWING_INC 235//FSWING_MAX-FSWING_MIN/(2*FSWING_STEPS) /* increment per interrupt call */
+
+//Input Relay Control
+#define REL_PWM_PER 10000u /* 500Hz @5MHz clock */
+#define REL_PWM_HOLD 5000u /* 50% duty */
+
+//Boost Mode
+#define BOOST_THRESHOLD 2000 // (2*25) 	/* Bulk Voltage Error that Activates Boost, 25V */
+#define BOOST_FACTOR 4			/* Boost Mode: Factor by that Voltage Compensator Ki is Multiplied */
+
+// PFC status
+#define PFC_PWR_GOOD 	0x0001
+#define PFC_UIN_OK		0x0002
+
+
+#endif

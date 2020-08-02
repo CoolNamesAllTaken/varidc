@@ -1,0 +1,541 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D_Bridge_-AA+ D?
+U 1 1 5F04A004
+P 3700 2250
+F 0 "D?" H 3900 2100 50  0000 L CNN
+F 1 "600V 6A" H 3850 2000 50  0000 L CNN
+F 2 "Package_SIP:SIP4_Sharp-SSR_P7.62mm_Straight" H 3700 2250 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/127EL.PDF" H 3700 2250 50  0001 C CNN
+F 4 "GBU6J" H 3700 2250 50  0001 C CNN "MPN"
+	1    3700 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1850 3700 1950
+Wire Wire Line
+	3700 2550 3700 2700
+$Comp
+L Device:C C?
+U 1 1 5F04A010
+P 4850 2250
+F 0 "C?" H 4965 2296 50  0000 L CNN
+F 1 "1u" H 4965 2205 50  0000 L CNN
+F 2 "" H 4888 2100 50  0001 C CNN
+F 3 "~" H 4850 2250 50  0001 C CNN
+	1    4850 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2100 4850 1850
+$Comp
+L Device:L L?
+U 1 1 5F04A018
+P 5250 1850
+F 0 "L?" V 5440 1850 50  0000 C CNN
+F 1 "L" V 5349 1850 50  0000 C CNN
+F 2 "" H 5250 1850 50  0001 C CNN
+F 3 "~" H 5250 1850 50  0001 C CNN
+	1    5250 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F04A01E
+P 6700 1500
+F 0 "D?" H 6700 1284 50  0000 C CNN
+F 1 "D" H 6700 1375 50  0000 C CNN
+F 2 "" H 6700 1500 50  0001 C CNN
+F 3 "~" H 6700 1500 50  0001 C CNN
+	1    6700 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5F04A024
+P 6700 1850
+F 0 "D?" H 6700 1634 50  0000 C CNN
+F 1 "D" H 6700 1725 50  0000 C CNN
+F 2 "" H 6700 1850 50  0001 C CNN
+F 3 "~" H 6700 1850 50  0001 C CNN
+	1    6700 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 1850 5100 1850
+Connection ~ 4850 1850
+Wire Wire Line
+	4850 1850 4850 1500
+Wire Wire Line
+	4850 1500 6550 1500
+Wire Wire Line
+	5400 1850 5950 1850
+Wire Wire Line
+	6850 1500 7700 1500
+Wire Wire Line
+	7700 1500 7700 1850
+Wire Wire Line
+	7700 1850 6850 1850
+Wire Wire Line
+	7700 1850 7700 2100
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5F04A035
+P 5850 4700
+F 0 "Q?" H 5700 4850 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 5400 4550 50  0000 L CNN
+F 2 "" H 6050 4800 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/c4/34/e6/40/6d/70/4b/01/DM00049184.pdf/files/DM00049184.pdf/jcr:content/translations/en.DM00049184.pdf" H 5850 4700 50  0001 C CNN
+F 4 "STP45N65M5" H 5850 4700 50  0001 C CNN "MPN"
+	1    5850 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4500 5950 3300
+Connection ~ 5950 1850
+Wire Wire Line
+	5950 1850 6550 1850
+Wire Wire Line
+	3400 2250 3300 2250
+Wire Wire Line
+	4000 2250 4100 2250
+Wire Wire Line
+	4100 2250 4100 1850
+Wire Wire Line
+	4100 1850 4850 1850
+Text Label 4100 1850 0    50   ~ 0
+PFC_IN_DC+
+Connection ~ 7700 1850
+Text Label 5450 1850 0    50   ~ 0
+PFC_Q_DRAIN
+$Comp
+L Device:CP1 C?
+U 1 1 5F04A07C
+P 7700 2250
+F 0 "C?" H 7815 2296 50  0000 L CNN
+F 1 "145.966uF" H 7815 2205 50  0000 L CNN
+F 2 "" H 7700 2250 50  0001 C CNN
+F 3 "~" H 7700 2250 50  0001 C CNN
+	1    7700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L lib_sch:UCC28056CDBV U?
+U 1 1 5F04A084
+P 3050 4600
+F 0 "U?" H 2700 4900 50  0000 C CNN
+F 1 "UCC28056CDBV" H 3400 4900 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2700 4900 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/ucc28056.pdf?ts=1593234748783&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FUCC28056" H 2700 4900 50  0001 C CNN
+F 4 "UCC28056CDBVR" H 3050 4600 50  0001 C CNN "MPN"
+	1    3050 4600
+	1    0    0    -1  
+$EndComp
+Text HLabel 8950 1850 2    50   Input ~ 0
+VDC_BULK
+$Comp
+L Device:R_US R?
+U 1 1 5F051037
+P 4050 3600
+F 0 "R?" H 4118 3646 50  0000 L CNN
+F 1 "3.32k" H 4118 3555 50  0000 L CNN
+F 2 "" V 4090 3590 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 4050 3600 50  0001 C CNN
+F 4 "CRCW04023K32FKED" H 4050 3600 50  0001 C CNN "MPN"
+	1    4050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F051C9D
+P 4600 3600
+F 0 "C?" H 4715 3646 50  0000 L CNN
+F 1 "470nF" H 4715 3555 50  0000 L CNN
+F 2 "" H 4638 3450 50  0001 C CNN
+F 3 "http://capacitoredge.kemet.com/capedge2/DataSheet?pn=C2220X474J5GACTU" H 4600 3600 50  0001 C CNN
+F 4 "C2220X474J5GACTU" H 4600 3600 50  0001 C CNN "MPN"
+	1    4600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F052610
+P 4050 4000
+F 0 "C?" H 4165 4046 50  0000 L CNN
+F 1 "4.796uF" H 4165 3955 50  0000 L CNN
+F 2 "" H 4088 3850 50  0001 C CNN
+F 3 "~" H 4050 4000 50  0001 C CNN
+	1    4050 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3450 4050 3400
+Wire Wire Line
+	4050 3400 4600 3400
+Wire Wire Line
+	4600 3400 4600 3450
+Wire Wire Line
+	4050 3750 4050 3850
+Wire Wire Line
+	4600 3750 4600 4200
+Wire Wire Line
+	4600 4200 4300 4200
+Wire Wire Line
+	4050 4200 4050 4150
+Wire Wire Line
+	4300 4250 4300 4200
+Connection ~ 4300 4200
+Wire Wire Line
+	4300 4200 4050 4200
+Wire Wire Line
+	4050 3400 3800 3400
+Connection ~ 4050 3400
+$Comp
+L Device:R_US R?
+U 1 1 5F078450
+P 8500 3250
+F 0 "R?" H 8568 3296 50  0000 L CNN
+F 1 "68.1k 1%" H 8568 3205 50  0000 L CNN
+F 2 "" V 8540 3240 50  0001 C CNN
+F 3 "http://www.yageo.com/exep/pages/download/literatures/PYu-R_Marking_2.pdf" H 8500 3250 50  0001 C CNN
+F 4 "RC0201FR-0768K1L" H 8500 3250 50  0001 C CNN "MPN"
+	1    8500 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 3450 8500 3400
+Wire Wire Line
+	8500 1850 8500 1900
+Wire Wire Line
+	8500 2200 8500 2300
+Wire Wire Line
+	8500 2600 8500 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5F095E5E
+P 3300 2350
+F 0 "#PWR?" H 3300 2100 50  0001 C CNN
+F 1 "GND" H 3305 2177 50  0000 C CNN
+F 2 "" H 3300 2350 50  0001 C CNN
+F 3 "" H 3300 2350 50  0001 C CNN
+	1    3300 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2350 3300 2250
+Wire Wire Line
+	4850 2400 4850 2500
+$Comp
+L Device:R_US R?
+U 1 1 5F0A9AB1
+P 6950 3550
+F 0 "R?" H 7018 3596 50  0000 L CNN
+F 1 "3.48M 1%" H 7018 3505 50  0000 L CNN
+F 2 "" V 6990 3540 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 6950 3550 50  0001 C CNN
+F 4 "CRCW12063M48FKEA" H 6950 3550 50  0001 C CNN "MPN"
+	1    6950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F0AC290
+P 6950 4850
+F 0 "R?" H 7018 4896 50  0000 L CNN
+F 1 "26.1k 1%" H 7018 4805 50  0000 L CNN
+F 2 "" V 6990 4840 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 6950 4850 50  0001 C CNN
+F 4 "CRCW040226K1FKED" H 6950 4850 50  0001 C CNN "MPN"
+	1    6950 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3400 6950 3300
+Wire Wire Line
+	6950 3300 5950 3300
+Connection ~ 5950 3300
+Wire Wire Line
+	5950 3300 5950 1850
+Wire Wire Line
+	6950 3700 6950 3800
+Wire Wire Line
+	6950 4100 6950 4200
+Wire Wire Line
+	6950 4500 6950 4550
+$Comp
+L Device:C C?
+U 1 1 5F0B3A37
+P 7500 3950
+F 0 "C?" H 7615 3996 50  0000 L CNN
+F 1 "10pF 1kV" H 7615 3905 50  0000 L CNN
+F 2 "" H 7538 3800 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/45199/commseri.pdf" H 7500 3950 50  0001 C CNN
+F 4 "VJ0805A100JXGAT5Z" H 7500 3950 50  0001 C CNN "MPN"
+	1    7500 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3300 7500 3300
+Wire Wire Line
+	7500 3300 7500 3800
+Connection ~ 6950 3300
+Wire Wire Line
+	7500 4100 7500 4550
+Wire Wire Line
+	7500 4550 6950 4550
+Connection ~ 6950 4550
+Wire Wire Line
+	6950 4550 6950 4700
+$Comp
+L Device:C C?
+U 1 1 5F0B810F
+P 7500 4850
+F 0 "C?" H 7615 4896 50  0000 L CNN
+F 1 "3.9 nF 50V" H 7615 4805 50  0000 L CNN
+F 2 "" H 7538 4700 50  0001 C CNN
+F 3 "http://product.tdk.com/capacitor/mlcc/en/documents/mlcc_automotive_general_en.pdf" H 7500 4850 50  0001 C CNN
+F 4 "CGA4C2C0G1H392J060AA" H 7500 4850 50  0001 C CNN "MPN"
+	1    7500 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 4700 7500 4550
+Connection ~ 7500 4550
+Wire Wire Line
+	7500 5000 7500 5150
+Wire Wire Line
+	6950 5150 6950 5000
+$Comp
+L Device:R_US R?
+U 1 1 5F0C1494
+P 5950 5400
+F 0 "R?" H 6018 5446 50  0000 L CNN
+F 1 "148.73m" H 6018 5355 50  0000 L CNN
+F 2 "" V 5990 5390 50  0001 C CNN
+F 3 "~" H 5950 5400 50  0001 C CNN
+	1    5950 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F0C2223
+P 5100 5400
+F 0 "R?" H 5168 5446 50  0000 L CNN
+F 1 "148.73m" H 5168 5355 50  0000 L CNN
+F 2 "" V 5140 5390 50  0001 C CNN
+F 3 "~" H 5100 5400 50  0001 C CNN
+	1    5100 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F0C29F8
+P 6700 5400
+F 0 "R?" H 6768 5446 50  0000 L CNN
+F 1 "148.73m" H 6768 5355 50  0000 L CNN
+F 2 "" V 6740 5390 50  0001 C CNN
+F 3 "~" H 6700 5400 50  0001 C CNN
+	1    6700 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5250 5100 5150
+Wire Wire Line
+	5950 5150 5950 4900
+Wire Wire Line
+	5950 5150 6700 5150
+Wire Wire Line
+	6700 5150 6700 5250
+Connection ~ 5950 5150
+Wire Wire Line
+	5950 5150 5950 5250
+Wire Wire Line
+	5100 5550 5100 5650
+Wire Wire Line
+	6700 5650 6700 5550
+Wire Wire Line
+	5950 5550 5950 5650
+Wire Wire Line
+	5950 5650 6700 5650
+Wire Wire Line
+	6950 5150 7500 5150
+Wire Wire Line
+	6950 5150 6700 5150
+Connection ~ 6950 5150
+Connection ~ 6700 5150
+Text Notes 6850 4500 1    50   ~ 0
+V_drain sense resistive divider
+Text Notes 7150 5450 0    50   ~ 0
+I_d sense resistors
+Wire Wire Line
+	5100 5150 5950 5150
+Wire Wire Line
+	5100 5650 5950 5650
+Connection ~ 5950 5650
+Text Label 7900 4550 2    50   ~ 0
+ZCD_CS
+Wire Wire Line
+	7900 4550 7500 4550
+Text Label 2200 4700 0    50   ~ 0
+ZCD_CS
+Wire Wire Line
+	2200 4700 2550 4700
+Text Notes 4900 4000 0    50   ~ 0
+Type II\nCompensator\nNetwork
+$Comp
+L Mechanical:Heatsink HS?
+U 1 1 5F118CBE
+P 6100 4700
+F 0 "HS?" V 6053 4880 50  0000 L CNN
+F 1 "Heatsink" V 6144 4880 50  0000 L CNN
+F 2 "" H 6112 4700 50  0001 C CNN
+F 3 "~" H 6112 4700 50  0001 C CNN
+F 4 "576602B00000G" H 6100 4700 50  0001 C CNN "MPN"
+	1    6100 4700
+	0    1    1    0   
+$EndComp
+Text GLabel 3050 4200 1    50   Input ~ 0
+12VP
+Wire Wire Line
+	3050 4200 3050 4250
+Text GLabel 3050 5050 3    50   Input ~ 0
+GNDP
+Wire Wire Line
+	3050 4950 3050 5050
+Text GLabel 4850 2500 3    50   Input ~ 0
+GNDP
+Text GLabel 7700 2450 3    50   Input ~ 0
+GNDP
+Wire Wire Line
+	7700 2400 7700 2450
+Text GLabel 8500 3450 3    50   Input ~ 0
+GNDP
+Text GLabel 4300 4250 3    50   Input ~ 0
+GNDP
+Wire Wire Line
+	3800 3400 3800 4500
+Wire Wire Line
+	3800 4500 3550 4500
+$Comp
+L Device:R_US R?
+U 1 1 5F0FECDD
+P 4850 4700
+F 0 "R?" V 4645 4700 50  0000 C CNN
+F 1 "27.4R" V 4736 4700 50  0000 C CNN
+F 2 "" V 4890 4690 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 4850 4700 50  0001 C CNN
+F 4 "CRCW040227R4FKED" H 4850 4700 50  0001 C CNN "MPN"
+	1    4850 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 4700 4700 4700
+Wire Wire Line
+	5000 4700 5650 4700
+Text GLabel 5950 5700 3    50   Input ~ 0
+GNDP
+Wire Wire Line
+	5950 5700 5950 5650
+Wire Wire Line
+	7700 1850 8500 1850
+Connection ~ 8500 1850
+Wire Wire Line
+	8500 1850 8950 1850
+Wire Wire Line
+	2450 4500 2550 4500
+Text Notes 9050 3100 1    50   ~ 0
+Output Voltage Sense Divider
+$Comp
+L Device:R_US R?
+U 1 1 5F1665CC
+P 8500 2050
+F 0 "R?" H 8568 2096 50  0000 L CNN
+F 1 "3.32M 1%" H 8568 2005 50  0000 L CNN
+F 2 "" V 8540 2040 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 8500 2050 50  0001 C CNN
+F 4 "CRCW12063M32FKEA" H 8500 2050 50  0001 C CNN "MPN"
+	1    8500 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F16705F
+P 8500 2450
+F 0 "R?" H 8568 2496 50  0000 L CNN
+F 1 "3.32M 1%" H 8568 2405 50  0000 L CNN
+F 2 "" V 8540 2440 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 8500 2450 50  0001 C CNN
+F 4 "CRCW12063M32FKEA" H 8500 2450 50  0001 C CNN "MPN"
+	1    8500 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F1675C4
+P 8500 2850
+F 0 "R?" H 8568 2896 50  0000 L CNN
+F 1 "3.32M 1%" H 8568 2805 50  0000 L CNN
+F 2 "" V 8540 2840 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 8500 2850 50  0001 C CNN
+F 4 "CRCW12063M32FKEA" H 8500 2850 50  0001 C CNN "MPN"
+	1    8500 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F168819
+P 6950 3950
+F 0 "R?" H 7018 3996 50  0000 L CNN
+F 1 "3.48M 1%" H 7018 3905 50  0000 L CNN
+F 2 "" V 6990 3940 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 6950 3950 50  0001 C CNN
+F 4 "CRCW12063M48FKEA" H 6950 3950 50  0001 C CNN "MPN"
+	1    6950 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F168E0E
+P 6950 4350
+F 0 "R?" H 7018 4396 50  0000 L CNN
+F 1 "3.48M 1%" H 7018 4305 50  0000 L CNN
+F 2 "" V 6990 4340 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 6950 4350 50  0001 C CNN
+F 4 "CRCW12063M48FKEA" H 6950 4350 50  0001 C CNN "MPN"
+	1    6950 4350
+	1    0    0    -1  
+$EndComp
+Text HLabel 3100 2700 0    50   Input ~ 0
+AC_NEUT
+Text HLabel 3100 1850 0    50   Input ~ 0
+AC_LINE
+Wire Wire Line
+	2450 3050 2450 4500
+Wire Wire Line
+	8500 3050 8500 3100
+Wire Wire Line
+	8500 3000 8500 3050
+Connection ~ 8500 3050
+Wire Wire Line
+	8500 3050 2450 3050
+Wire Wire Line
+	3100 1850 3700 1850
+Wire Wire Line
+	3100 2700 3700 2700
+Text Notes 5000 1150 0    100  ~ 0
+DCM Boost Converter PFC
+$EndSCHEMATC
